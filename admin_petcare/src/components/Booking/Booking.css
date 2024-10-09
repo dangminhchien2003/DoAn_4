@@ -1,0 +1,51 @@
+.booking-content-section{
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100% chiều cao màn hình */
+    margin: 0;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng/chiều cao của phần tử */
+    display: flex;
+    flex-direction: column;
+}
+ /* CSS cho header-section */
+ .bookings-header-section {
+    display: flex;
+    justify-content: center;  /* Canh giữa tất cả các phần tử */
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* CSS cho tiêu đề */
+  .bookings-header-section h2 {
+    position: absolute;
+    left: 0; /* Căn trái tiêu đề */
+    margin: 0;
+  }
+  
+  /* CSS cho thanh tìm kiếm */
+  .bookings-search-container {
+    position: relative;
+    width: 500px;
+  }
+  
+  .bookings-search-icon {
+    position: absolute;
+    top: 40%;
+    right: 10px; /* Đặt icon ở bên phải */
+    transform: translateY(-50%);
+    color: #7f8c8d;
+    font-size: 18px;
+  }
+  
+  .bookings-search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Thêm khoảng trống bên phải cho icon */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .bookings-search-input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
